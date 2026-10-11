@@ -194,12 +194,12 @@ function fact(){const S=[],fr=[],n=4;const sn=(log,d,h)=>S.push(mk(fr.map(([k,t]
   let r=1;for(let k=1;k<=n;k++){r*=k;fr[fr.length-1]=[k,`fact(${k})=${r}`];sn(`fact(${k}) = ${r}`,.9,{[k]:GRN});if(k<n)fr.pop()}
   sn('=4*3*2*1 = 24',2.6,{[4]:GRN});return S}
 function stu(m0,m1,tm){const M=m=>[['n',null,'name:kavana'],['r',null,'rollno:20'],['m',null,'marks:'+m]],S=[];
-  S.push(mk(M(m0),{},`display → kavana, 20, ${m0}`,1.4),mk(M(m0),{m:YEL},`update(${m1})`,.8),mk(M(m1),{m:ORG},'marks updated',.9),mk(M(m1),{m:GRN},`display → kavana, 20, ${m1}`,tm?1.2:2.6));
+  S.push(mk(M(m0),{},`display → Nesara, 20, ${m0}`,1.4),mk(M(m0),{m:YEL},`update(${m1})`,.8),mk(M(m1),{m:ORG},'marks updated',.9),mk(M(m1),{m:GRN},`display → Nesara, 20, ${m1}`,tm?1.2:2.6));
   if(tm)S.push(mk(M(m1),{m:GRN},'time taken: 0.00004 s · space used: 48 bytes',2.6));return S}
 function ds(){const S=[],T=(L,h,log,d)=>S.push(mk(L.map(x=>[x,null,String(x)]),h,log,d)),nums=[10,20,30,40];
   T(nums,0,'numbers=[10, 20, 30, 40]',1.1);T([...nums,50],{50:YEL},'numbers.append(50)',1.1);T([...nums,50],{50:GRN},'[10, 20, 30, 40, 50]',1);
   T(['apple','banana','orange'],{orange:ORG},'fruits.remove("orange")',1.1);T(['apple','banana'],0,"['apple', 'banana']",.9);T(['apple','banana','papaya'],{papaya:YEL},'fruits.append("papaya")',1.1);
-  T(['name:kavana','age:20','course:python'],0,'student={name, age, course}',1.1);T(['name:kavana','age:17','course:python'],{'age:17':ORG},'student["age"]=17',2.6);return S}
+  T(['name:Nesara','age:20','course:python'],0,'student={name, age, course}',1.1);T(['name:Nesara','age:17','course:python'],{'age:17':ORG},'student["age"]=17',2.6);return S}
 
 /* ---------- graph engine (BFS / DFS) ---------- */
 function graph(si,steps){const X=ST[si].x,nodes={},ed={},np=k=>new THREE.Vector3(X+BN[k][0],BN[k][1]+.7,0),Y=new THREE.Vector3(0,1,0);
