@@ -193,7 +193,7 @@ function fact(){const S=[],fr=[],n=4;const sn=(log,d,h)=>S.push(mk(fr.map(([k,t]
   sn('fact(4)',1);for(let k=n;k>=1;k--){fr.push([k,`fact(${k})`]);sn(k>1?`${k} * fact(${k-1})`:'=1',.9,{[k]:YEL})}
   let r=1;for(let k=1;k<=n;k++){r*=k;fr[fr.length-1]=[k,`fact(${k})=${r}`];sn(`fact(${k}) = ${r}`,.9,{[k]:GRN});if(k<n)fr.pop()}
   sn('=4*3*2*1 = 24',2.6,{[4]:GRN});return S}
-function stu(m0,m1,tm){const M=m=>[['n',null,'name:kavana'],['r',null,'rollno:20'],['m',null,'marks:'+m]],S=[];
+function stu(m0,m1,tm){const M=m=>[['n',null,'name:Nesara'],['r',null,'rollno:20'],['m',null,'marks:'+m]],S=[];
   S.push(mk(M(m0),{},`display → Nesara, 20, ${m0}`,1.4),mk(M(m0),{m:YEL},`update(${m1})`,.8),mk(M(m1),{m:ORG},'marks updated',.9),mk(M(m1),{m:GRN},`display → Nesara, 20, ${m1}`,tm?1.2:2.6));
   if(tm)S.push(mk(M(m1),{m:GRN},'time taken: 0.00004 s · space used: 48 bytes',2.6));return S}
 function ds(){const S=[],T=(L,h,log,d)=>S.push(mk(L.map(x=>[x,null,String(x)]),h,log,d)),nums=[10,20,30,40];
